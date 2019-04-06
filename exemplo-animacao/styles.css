@@ -1,0 +1,28 @@
+img {
+    animation: deslocar 1s infinite;
+    animation-delay: 3s;
+    display: block;
+    opacity: 0.5;
+    transition: 1s;
+    width: 200px;
+}
+
+img:hover {
+    opacity: 1;
+    transform: scale(1.01);
+}
+
+@keyframes deslocar {
+    0% {
+        opacity: 1;
+        transform: translate(0) rotate(0);
+    }
+
+    25% {
+        transform: translate(0) rotate(25deg);
+    }
+
+    100% {
+        transform: translate(600px) rotate(45deg);
+    }
+}
